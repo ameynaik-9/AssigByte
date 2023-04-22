@@ -1,5 +1,5 @@
 const mongoose=require ('mongoose')
-const DB="mongodb+srv://ameynaik09:amey123@cluster0.ivzmoqi.mongodb.net/?retryWrites=true&w=majority";
+const DB=Process.env.MONGO_URI;
 mongoose.set('strictQuery', true);
 mongoose
 .connect(DB,{
