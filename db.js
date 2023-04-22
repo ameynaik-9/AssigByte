@@ -1,5 +1,5 @@
 const mongoose=require ('mongoose')
-const DB=Process.env.MONGO_URI;
+const DB=process.env.MONGO_URI;
 mongoose.set('strictQuery', true);
 mongoose
 .connect(DB,{
